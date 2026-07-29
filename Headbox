@@ -1,0 +1,95 @@
+local Players = game:GetService("Players")
+local TextChatService = game:GetService("TextChatService")
+
+local LocalPlayer = Players.LocalPlayer
+local Enabled = false
+
+local Tracers = {}
+
+local function removeTracer(player)
+	if Tracers[player] then
+		Tracers[player]:Destroy()
+		Tracers[player] = nil
+	end
+end
+
+local function createTracer(player)
+	if not Enabled then return end
+	if player == LocalPlayer then return end
+
+	local character = player.Character
+	if not character then return end
+
+	local head = character:FindFirstChild("Head")
+	if not head then return end
+
+	removeTracer(player)
+
+	local box = Instance.new("BoxHandleAdornment")
+	box.Name = "HeadBox"
+	box.Adornee = head
+	box.Size = head.Size + Vector3.new(0.15, 0.15, 0.15)
+	box.Color3 = Color3.fromRGB(173, 216, 230) -- Light blue
+	box.Transparency = 0.35
+	box.AlwaysOnTop = true
+	box.ZIndex = 10
+	box.Parent = head
+
+	Tracers[player] = box
+end
+
+local function refreshAll()
+	for _, player in ipairs(Players:GetPlayers()) do
+		if player ~= LocalPlayer then
+			createTracer(player)
+		end
+	end
+end
+
+local function setEnabled(state)
+	Enabled = state
+
+	if Enabled then
+		refreshAll()
+	else
+		for player in pairs(Tracers) do
+			removeTracer(player)
+		end
+	end
+end
+
+Players.PlayerAdded:Connect(function(player)
+	player.CharacterAdded:Connect(function()
+		task.wait(0.2)
+		createTracer(player)
+	end)
+end)
+
+for _, player in ipairs(Players:GetPlayers()) do
+	if player ~= LocalPlayer then
+		player.CharacterAdded:Connect(function()
+			task.wait(0.2)
+			createTracer(player)
+		end)
+	end
+end
+
+local function onMessage(text)
+	text = text:lower()
+
+	if text == "!hb" then
+		setEnabled(true)
+	elseif text == "!unhb" then
+		setEnabled(false)
+	end
+end
+
+-- Legacy Chat
+LocalPlayer.Chatted:Connect(onMessage)
+
+-- TextChatService
+if TextChatService.ChatVersion == Enum.ChatVersion.TextChatService then
+	TextChatService.SendingMessage:Connect(function(message)
+		onMessage(message.Text)
+	end)
+end
