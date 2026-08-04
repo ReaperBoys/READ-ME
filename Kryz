@@ -1,0 +1,1231 @@
+local Kryz = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local Title = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Speed = Instance.new("Frame")
+local UIGradient_2 = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
+local SpeedLabel = Instance.new("TextLabel")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local TextBox = Instance.new("TextBox")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
+local JumpPower = Instance.new("Frame")
+local UIGradient_3 = Instance.new("UIGradient")
+local UICorner_3 = Instance.new("UICorner")
+local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
+local TextBox_2 = Instance.new("TextBox")
+local UITextSizeConstraint_3 = Instance.new("UITextSizeConstraint")
+local JumpLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_4 = Instance.new("UITextSizeConstraint")
+local InfJump = Instance.new("Frame")
+local UIGradient_4 = Instance.new("UIGradient")
+local UICorner_4 = Instance.new("UICorner")
+local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
+local InfiniteJumpLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_5 = Instance.new("UITextSizeConstraint")
+local TextBox_3 = Instance.new("TextBox")
+local UITextSizeConstraint_6 = Instance.new("UITextSizeConstraint")
+local Fly = Instance.new("Frame")
+local UIGradient_5 = Instance.new("UIGradient")
+local UICorner_5 = Instance.new("UICorner")
+local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
+local TextBox_4 = Instance.new("TextBox")
+local UITextSizeConstraint_7 = Instance.new("UITextSizeConstraint")
+local FlyLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_8 = Instance.new("UITextSizeConstraint")
+local Goto = Instance.new("Frame")
+local UIGradient_6 = Instance.new("UIGradient")
+local UICorner_6 = Instance.new("UICorner")
+local UIAspectRatioConstraint_5 = Instance.new("UIAspectRatioConstraint")
+local TextBox_5 = Instance.new("TextBox")
+local UITextSizeConstraint_9 = Instance.new("UITextSizeConstraint")
+local TeleportToLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_10 = Instance.new("UITextSizeConstraint")
+local Noclip = Instance.new("Frame")
+local UIGradient_7 = Instance.new("UIGradient")
+local UICorner_7 = Instance.new("UICorner")
+local UIAspectRatioConstraint_6 = Instance.new("UIAspectRatioConstraint")
+local TextBox_6 = Instance.new("TextBox")
+local UITextSizeConstraint_11 = Instance.new("UITextSizeConstraint")
+local NoclipLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_12 = Instance.new("UITextSizeConstraint")
+local Spin = Instance.new("Frame")
+local UIGradient_8 = Instance.new("UIGradient")
+local UICorner_8 = Instance.new("UICorner")
+local UIAspectRatioConstraint_7 = Instance.new("UIAspectRatioConstraint")
+local TextBox_7 = Instance.new("TextBox")
+local UITextSizeConstraint_13 = Instance.new("UITextSizeConstraint")
+local SpinLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_14 = Instance.new("UITextSizeConstraint")
+local Float = Instance.new("Frame")
+local UIGradient_9 = Instance.new("UIGradient")
+local UICorner_9 = Instance.new("UICorner")
+local UIAspectRatioConstraint_8 = Instance.new("UIAspectRatioConstraint")
+local TextBox_8 = Instance.new("TextBox")
+local UITextSizeConstraint_15 = Instance.new("UITextSizeConstraint")
+local FloatLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_16 = Instance.new("UITextSizeConstraint")
+local Fling = Instance.new("Frame")
+local UIGradient_10 = Instance.new("UIGradient")
+local UICorner_10 = Instance.new("UICorner")
+local UIAspectRatioConstraint_9 = Instance.new("UIAspectRatioConstraint")
+local TextBox_9 = Instance.new("TextBox")
+local UITextSizeConstraint_17 = Instance.new("UITextSizeConstraint")
+local FlingLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_18 = Instance.new("UITextSizeConstraint")
+local Print = Instance.new("Frame")
+local UIGradient_11 = Instance.new("UIGradient")
+local UICorner_11 = Instance.new("UICorner")
+local UIAspectRatioConstraint_10 = Instance.new("UIAspectRatioConstraint")
+local TextBox_10 = Instance.new("TextBox")
+local UITextSizeConstraint_19 = Instance.new("UITextSizeConstraint")
+local PrintLabel = Instance.new("TextLabel")
+local UITextSizeConstraint_20 = Instance.new("UITextSizeConstraint")
+local UIListLayout = Instance.new("UIListLayout")
+local UIAspectRatioConstraint_11 = Instance.new("UIAspectRatioConstraint")
+local DescriptionFrame = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
+local UIGradient_12 = Instance.new("UIGradient")
+local Description = Instance.new("TextLabel")
+local UIAspectRatioConstraint_12 = Instance.new("UIAspectRatioConstraint")
+
+--Properties:
+
+Kryz.Name = "Kryz"
+Kryz.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Kryz.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = Kryz
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MainFrame.BorderSizePixel = 0
+MainFrame.Position = UDim2.new(0.394539475, 0, 0.27868852, 0)
+MainFrame.Size = UDim2.new(0.241973042, 0, 0.44262296, 0)
+
+UICorner.CornerRadius = UDim.new(0, 9)
+UICorner.Parent = MainFrame
+
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient.Parent = MainFrame
+
+Title.Name = "Title"
+Title.Parent = MainFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderColor3 = Color3.fromRGB(27, 42, 53)
+Title.Position = UDim2.new(0.0291295797, 0, 0.0198972877, 0)
+Title.Size = UDim2.new(0, 239, 0, 29)
+Title.ZIndex = 205
+Title.Font = Enum.Font.Unknown
+Title.Text = "Kryz Admin"
+Title.TextColor3 = Color3.fromRGB(240, 240, 240)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+Title.TextXAlignment = Enum.TextXAlignment.Left
+
+Close.Name = "Close"
+Close.Parent = MainFrame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Close.BorderSizePixel = 0
+Close.Position = UDim2.new(0.8706218, 0, -0.0142450146, 0)
+Close.Size = UDim2.new(0, 40, 0, 40)
+Close.Font = Enum.Font.FredokaOne
+Close.Text = "x"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextScaled = true
+Close.TextSize = 14.000
+Close.TextWrapped = true
+
+ScrollingFrame.Parent = MainFrame
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScrollingFrame.BorderSizePixel = 0
+ScrollingFrame.Position = UDim2.new(0, 0, 0.133903131, 0)
+ScrollingFrame.Size = UDim2.new(1.00000012, 0, 0.866096854, 0)
+ScrollingFrame.ScrollBarThickness = 10
+
+Speed.Name = "Speed"
+Speed.Parent = ScrollingFrame
+Speed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Speed.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Speed.BorderSizePixel = 0
+Speed.Position = UDim2.new(0.0444444455, 0, 0.0142450146, 0)
+Speed.Size = UDim2.new(0, 285, 0, 54)
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_2.Parent = Speed
+
+UICorner_2.CornerRadius = UDim.new(0, 9)
+UICorner_2.Parent = Speed
+
+SpeedLabel.Name = "SpeedLabel"
+SpeedLabel.Parent = Speed
+SpeedLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpeedLabel.BackgroundTransparency = 1.000
+SpeedLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpeedLabel.BorderSizePixel = 0
+SpeedLabel.Position = UDim2.new(0.0210526325, 0, 0, 0)
+SpeedLabel.Size = UDim2.new(0, 118, 0, 54)
+SpeedLabel.Font = Enum.Font.SourceSans
+SpeedLabel.Text = "Speed"
+SpeedLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpeedLabel.TextScaled = true
+SpeedLabel.TextSize = 50.000
+SpeedLabel.TextWrapped = true
+
+UITextSizeConstraint.Parent = SpeedLabel
+UITextSizeConstraint.MaxTextSize = 50
+
+TextBox.Parent = Speed
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BackgroundTransparency = 1.000
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.459649116, 0, 0, 0)
+TextBox.Size = UDim2.new(0, 154, 0, 54)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "<input>"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextScaled = true
+TextBox.TextSize = 50.000
+TextBox.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = TextBox
+UITextSizeConstraint_2.MaxTextSize = 50
+
+UIAspectRatioConstraint.Parent = Speed
+UIAspectRatioConstraint.AspectRatio = 5.278
+
+JumpPower.Name = "JumpPower"
+JumpPower.Parent = ScrollingFrame
+JumpPower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpPower.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpPower.BorderSizePixel = 0
+JumpPower.Position = UDim2.new(0.0444444455, 0, 0.108262107, 0)
+JumpPower.Size = UDim2.new(0, 285, 0, 54)
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_3.Parent = JumpPower
+
+UICorner_3.CornerRadius = UDim.new(0, 9)
+UICorner_3.Parent = JumpPower
+
+UIAspectRatioConstraint_2.Parent = JumpPower
+UIAspectRatioConstraint_2.AspectRatio = 5.278
+
+TextBox_2.Parent = JumpPower
+TextBox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.BackgroundTransparency = 1.000
+TextBox_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_2.BorderSizePixel = 0
+TextBox_2.Position = UDim2.new(0.459649116, 0, 0, 0)
+TextBox_2.Size = UDim2.new(0, 154, 0, 54)
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.Text = "<input>"
+TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.TextScaled = true
+TextBox_2.TextSize = 50.000
+TextBox_2.TextWrapped = true
+
+UITextSizeConstraint_3.Parent = TextBox_2
+UITextSizeConstraint_3.MaxTextSize = 50
+
+JumpLabel.Name = "JumpLabel"
+JumpLabel.Parent = JumpPower
+JumpLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JumpLabel.BackgroundTransparency = 1.000
+JumpLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+JumpLabel.BorderSizePixel = 0
+JumpLabel.Position = UDim2.new(0.0210526325, 0, 0, 0)
+JumpLabel.Size = UDim2.new(0, 118, 0, 54)
+JumpLabel.Font = Enum.Font.SourceSans
+JumpLabel.Text = "Jump"
+JumpLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+JumpLabel.TextScaled = true
+JumpLabel.TextSize = 50.000
+JumpLabel.TextWrapped = true
+
+UITextSizeConstraint_4.Parent = JumpLabel
+UITextSizeConstraint_4.MaxTextSize = 50
+
+InfJump.Name = "InfJump"
+InfJump.Parent = ScrollingFrame
+InfJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfJump.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfJump.BorderSizePixel = 0
+InfJump.Position = UDim2.new(0.0444444455, 0, 0.29772079, 0)
+InfJump.Size = UDim2.new(0, 285, 0, 54)
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_4.Parent = InfJump
+
+UICorner_4.CornerRadius = UDim.new(0, 9)
+UICorner_4.Parent = InfJump
+
+UIAspectRatioConstraint_3.Parent = InfJump
+UIAspectRatioConstraint_3.AspectRatio = 5.278
+
+InfiniteJumpLabel.Name = "InfiniteJumpLabel"
+InfiniteJumpLabel.Parent = InfJump
+InfiniteJumpLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteJumpLabel.BackgroundTransparency = 1.000
+InfiniteJumpLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteJumpLabel.BorderSizePixel = 0
+InfiniteJumpLabel.Position = UDim2.new(0.0210526325, 0, 0, 0)
+InfiniteJumpLabel.Size = UDim2.new(0, 118, 0, 54)
+InfiniteJumpLabel.Font = Enum.Font.SourceSans
+InfiniteJumpLabel.Text = "InfJump"
+InfiniteJumpLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteJumpLabel.TextScaled = true
+InfiniteJumpLabel.TextSize = 50.000
+InfiniteJumpLabel.TextWrapped = true
+
+UITextSizeConstraint_5.Parent = InfiniteJumpLabel
+UITextSizeConstraint_5.MaxTextSize = 50
+
+TextBox_3.Parent = InfJump
+TextBox_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_3.BackgroundTransparency = 1.000
+TextBox_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_3.BorderSizePixel = 0
+TextBox_3.Position = UDim2.new(0.459649116, 0, 0, 0)
+TextBox_3.Size = UDim2.new(0, 154, 0, 54)
+TextBox_3.Font = Enum.Font.SourceSans
+TextBox_3.Text = "<T/F>"
+TextBox_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_3.TextScaled = true
+TextBox_3.TextSize = 50.000
+TextBox_3.TextWrapped = true
+
+UITextSizeConstraint_6.Parent = TextBox_3
+UITextSizeConstraint_6.MaxTextSize = 50
+
+Fly.Name = "Fly"
+Fly.Parent = ScrollingFrame
+Fly.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fly.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fly.BorderSizePixel = 0
+Fly.Position = UDim2.new(0.0444444455, 0, 0.203703701, 0)
+Fly.Size = UDim2.new(0, 285, 0, 54)
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_5.Parent = Fly
+
+UICorner_5.CornerRadius = UDim.new(0, 9)
+UICorner_5.Parent = Fly
+
+UIAspectRatioConstraint_4.Parent = Fly
+UIAspectRatioConstraint_4.AspectRatio = 5.278
+
+TextBox_4.Parent = Fly
+TextBox_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_4.BackgroundTransparency = 1.000
+TextBox_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_4.BorderSizePixel = 0
+TextBox_4.Position = UDim2.new(0.459649116, 0, 0, 0)
+TextBox_4.Size = UDim2.new(0, 154, 0, 54)
+TextBox_4.Font = Enum.Font.SourceSans
+TextBox_4.Text = "<T/F>"
+TextBox_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_4.TextScaled = true
+TextBox_4.TextSize = 50.000
+TextBox_4.TextWrapped = true
+
+UITextSizeConstraint_7.Parent = TextBox_4
+UITextSizeConstraint_7.MaxTextSize = 50
+
+FlyLabel.Name = "FlyLabel"
+FlyLabel.Parent = Fly
+FlyLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FlyLabel.BackgroundTransparency = 1.000
+FlyLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FlyLabel.BorderSizePixel = 0
+FlyLabel.Position = UDim2.new(0.0210526325, 0, 0, 0)
+FlyLabel.Size = UDim2.new(0, 118, 0, 54)
+FlyLabel.Font = Enum.Font.SourceSans
+FlyLabel.Text = "Fly"
+FlyLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlyLabel.TextScaled = true
+FlyLabel.TextSize = 50.000
+FlyLabel.TextWrapped = true
+
+UITextSizeConstraint_8.Parent = FlyLabel
+UITextSizeConstraint_8.MaxTextSize = 50
+
+Goto.Name = "Goto"
+Goto.Parent = ScrollingFrame
+Goto.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Goto.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Goto.BorderSizePixel = 0
+Goto.Position = UDim2.new(0.0444444455, 0, 0.673789203, 0)
+Goto.Size = UDim2.new(0, 285, 0, 54)
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_6.Parent = Goto
+
+UICorner_6.CornerRadius = UDim.new(0, 9)
+UICorner_6.Parent = Goto
+
+UIAspectRatioConstraint_5.Parent = Goto
+UIAspectRatioConstraint_5.AspectRatio = 5.278
+
+TextBox_5.Parent = Goto
+TextBox_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_5.BackgroundTransparency = 1.000
+TextBox_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_5.BorderSizePixel = 0
+TextBox_5.Position = UDim2.new(0.459649116, 0, 0, 0)
+TextBox_5.Size = UDim2.new(0, 154, 0, 54)
+TextBox_5.Font = Enum.Font.SourceSans
+TextBox_5.Text = "<Roblox>"
+TextBox_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_5.TextScaled = true
+TextBox_5.TextSize = 50.000
+TextBox_5.TextWrapped = true
+
+UITextSizeConstraint_9.Parent = TextBox_5
+UITextSizeConstraint_9.MaxTextSize = 50
+
+TeleportToLabel.Name = "TeleportToLabel"
+TeleportToLabel.Parent = Goto
+TeleportToLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TeleportToLabel.BackgroundTransparency = 1.000
+TeleportToLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TeleportToLabel.BorderSizePixel = 0
+TeleportToLabel.Position = UDim2.new(0.0210526325, 0, 0, 0)
+TeleportToLabel.Size = UDim2.new(0, 118, 0, 54)
+TeleportToLabel.Font = Enum.Font.SourceSans
+TeleportToLabel.Text = "Goto"
+TeleportToLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeleportToLabel.TextScaled = true
+TeleportToLabel.TextSize = 50.000
+TeleportToLabel.TextWrapped = true
+
+UITextSizeConstraint_10.Parent = TeleportToLabel
+UITextSizeConstraint_10.MaxTextSize = 50
+
+Noclip.Name = "Noclip"
+Noclip.Parent = ScrollingFrame
+Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.BorderSizePixel = 0
+Noclip.Position = UDim2.new(0.0444444455, 0, 0.579772055, 0)
+Noclip.Size = UDim2.new(0, 285, 0, 54)
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_7.Parent = Noclip
+
+UICorner_7.CornerRadius = UDim.new(0, 9)
+UICorner_7.Parent = Noclip
+
+UIAspectRatioConstraint_6.Parent = Noclip
+UIAspectRatioConstraint_6.AspectRatio = 5.278
+
+TextBox_6.Parent = Noclip
+TextBox_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_6.BackgroundTransparency = 1.000
+TextBox_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_6.BorderSizePixel = 0
+TextBox_6.Position = UDim2.new(0.459649116, 0, 0, 0)
+TextBox_6.Size = UDim2.new(0, 154, 0, 54)
+TextBox_6.Font = Enum.Font.SourceSans
+TextBox_6.Text = "<T/F>"
+TextBox_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_6.TextScaled = true
+TextBox_6.TextSize = 50.000
+TextBox_6.TextWrapped = true
+
+UITextSizeConstraint_11.Parent = TextBox_6
+UITextSizeConstraint_11.MaxTextSize = 50
+
+NoclipLabel.Name = "NoclipLabel"
+NoclipLabel.Parent = Noclip
+NoclipLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NoclipLabel.BackgroundTransparency = 1.000
+NoclipLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+NoclipLabel.BorderSizePixel = 0
+NoclipLabel.Position = UDim2.new(0.0210526325, 0, 0, 0)
+NoclipLabel.Size = UDim2.new(0, 118, 0, 54)
+NoclipLabel.Font = Enum.Font.SourceSans
+NoclipLabel.Text = "Noclip"
+NoclipLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoclipLabel.TextScaled = true
+NoclipLabel.TextSize = 50.000
+NoclipLabel.TextWrapped = true
+
+UITextSizeConstraint_12.Parent = NoclipLabel
+UITextSizeConstraint_12.MaxTextSize = 50
+
+Spin.Name = "Spin"
+Spin.Parent = ScrollingFrame
+Spin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Spin.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Spin.BorderSizePixel = 0
+Spin.Position = UDim2.new(0.0444444455, 0, 0.484330475, 0)
+Spin.Size = UDim2.new(0, 285, 0, 54)
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_8.Parent = Spin
+
+UICorner_8.CornerRadius = UDim.new(0, 9)
+UICorner_8.Parent = Spin
+
+UIAspectRatioConstraint_7.Parent = Spin
+UIAspectRatioConstraint_7.AspectRatio = 5.278
+
+TextBox_7.Parent = Spin
+TextBox_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_7.BackgroundTransparency = 1.000
+TextBox_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_7.BorderSizePixel = 0
+TextBox_7.Position = UDim2.new(0.459649116, 0, 0, 0)
+TextBox_7.Size = UDim2.new(0, 154, 0, 54)
+TextBox_7.Font = Enum.Font.SourceSans
+TextBox_7.Text = "<number>"
+TextBox_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_7.TextScaled = true
+TextBox_7.TextSize = 50.000
+TextBox_7.TextWrapped = true
+
+UITextSizeConstraint_13.Parent = TextBox_7
+UITextSizeConstraint_13.MaxTextSize = 50
+
+SpinLabel.Name = "SpinLabel"
+SpinLabel.Parent = Spin
+SpinLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SpinLabel.BackgroundTransparency = 1.000
+SpinLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+SpinLabel.BorderSizePixel = 0
+SpinLabel.Position = UDim2.new(0.0210526325, 0, 0, 0)
+SpinLabel.Size = UDim2.new(0, 118, 0, 54)
+SpinLabel.Font = Enum.Font.SourceSans
+SpinLabel.Text = "Spin"
+SpinLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+SpinLabel.TextScaled = true
+SpinLabel.TextSize = 50.000
+SpinLabel.TextWrapped = true
+
+UITextSizeConstraint_14.Parent = SpinLabel
+UITextSizeConstraint_14.MaxTextSize = 50
+
+Float.Name = "Float"
+Float.Parent = ScrollingFrame
+Float.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Float.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Float.BorderSizePixel = 0
+Float.Position = UDim2.new(0.0444444455, 0, 0.390313387, 0)
+Float.Size = UDim2.new(0, 285, 0, 54)
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_9.Parent = Float
+
+UICorner_9.CornerRadius = UDim.new(0, 9)
+UICorner_9.Parent = Float
+
+UIAspectRatioConstraint_8.Parent = Float
+UIAspectRatioConstraint_8.AspectRatio = 5.278
+
+TextBox_8.Parent = Float
+TextBox_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_8.BackgroundTransparency = 1.000
+TextBox_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_8.BorderSizePixel = 0
+TextBox_8.Position = UDim2.new(0.459649116, 0, 0, 0)
+TextBox_8.Size = UDim2.new(0, 154, 0, 54)
+TextBox_8.Font = Enum.Font.SourceSans
+TextBox_8.Text = "<number>"
+TextBox_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_8.TextScaled = true
+TextBox_8.TextSize = 50.000
+TextBox_8.TextWrapped = true
+
+UITextSizeConstraint_15.Parent = TextBox_8
+UITextSizeConstraint_15.MaxTextSize = 50
+
+FloatLabel.Name = "FloatLabel"
+FloatLabel.Parent = Float
+FloatLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FloatLabel.BackgroundTransparency = 1.000
+FloatLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FloatLabel.BorderSizePixel = 0
+FloatLabel.Position = UDim2.new(0.0210526325, 0, 0, 0)
+FloatLabel.Size = UDim2.new(0, 118, 0, 54)
+FloatLabel.Font = Enum.Font.SourceSans
+FloatLabel.Text = "Float"
+FloatLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+FloatLabel.TextScaled = true
+FloatLabel.TextSize = 50.000
+FloatLabel.TextWrapped = true
+
+UITextSizeConstraint_16.Parent = FloatLabel
+UITextSizeConstraint_16.MaxTextSize = 50
+
+Fling.Name = "Fling"
+Fling.Parent = ScrollingFrame
+Fling.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fling.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Fling.BorderSizePixel = 0
+Fling.Position = UDim2.new(0.0444444455, 0, 0.863247871, 0)
+Fling.Size = UDim2.new(0, 285, 0, 54)
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_10.Parent = Fling
+
+UICorner_10.CornerRadius = UDim.new(0, 9)
+UICorner_10.Parent = Fling
+
+UIAspectRatioConstraint_9.Parent = Fling
+UIAspectRatioConstraint_9.AspectRatio = 5.278
+
+TextBox_9.Parent = Fling
+TextBox_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_9.BackgroundTransparency = 1.000
+TextBox_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_9.BorderSizePixel = 0
+TextBox_9.Position = UDim2.new(0.459649116, 0, 0, 0)
+TextBox_9.Size = UDim2.new(0, 154, 0, 54)
+TextBox_9.Font = Enum.Font.SourceSans
+TextBox_9.Text = "<number>"
+TextBox_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_9.TextScaled = true
+TextBox_9.TextSize = 50.000
+TextBox_9.TextWrapped = true
+
+UITextSizeConstraint_17.Parent = TextBox_9
+UITextSizeConstraint_17.MaxTextSize = 50
+
+FlingLabel.Name = "FlingLabel"
+FlingLabel.Parent = Fling
+FlingLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FlingLabel.BackgroundTransparency = 1.000
+FlingLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FlingLabel.BorderSizePixel = 0
+FlingLabel.Position = UDim2.new(0.0210526325, 0, 0, 0)
+FlingLabel.Size = UDim2.new(0, 118, 0, 54)
+FlingLabel.Font = Enum.Font.SourceSans
+FlingLabel.Text = "Fling"
+FlingLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+FlingLabel.TextScaled = true
+FlingLabel.TextSize = 50.000
+FlingLabel.TextWrapped = true
+
+UITextSizeConstraint_18.Parent = FlingLabel
+UITextSizeConstraint_18.MaxTextSize = 50
+
+Print.Name = "Print"
+Print.Parent = ScrollingFrame
+Print.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Print.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Print.BorderSizePixel = 0
+Print.Position = UDim2.new(0.0444444455, 0, 0.769230783, 0)
+Print.Size = UDim2.new(0, 285, 0, 54)
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_11.Parent = Print
+
+UICorner_11.CornerRadius = UDim.new(0, 9)
+UICorner_11.Parent = Print
+
+UIAspectRatioConstraint_10.Parent = Print
+UIAspectRatioConstraint_10.AspectRatio = 5.278
+
+TextBox_10.Parent = Print
+TextBox_10.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_10.BackgroundTransparency = 1.000
+TextBox_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox_10.BorderSizePixel = 0
+TextBox_10.Position = UDim2.new(0.459649116, 0, 0, 0)
+TextBox_10.Size = UDim2.new(0, 154, 0, 54)
+TextBox_10.Font = Enum.Font.SourceSans
+TextBox_10.Text = "<type print>"
+TextBox_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_10.TextScaled = true
+TextBox_10.TextSize = 50.000
+TextBox_10.TextWrapped = true
+
+UITextSizeConstraint_19.Parent = TextBox_10
+UITextSizeConstraint_19.MaxTextSize = 50
+
+PrintLabel.Name = "PrintLabel"
+PrintLabel.Parent = Print
+PrintLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PrintLabel.BackgroundTransparency = 1.000
+PrintLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PrintLabel.BorderSizePixel = 0
+PrintLabel.Position = UDim2.new(0.0210526325, 0, 0, 0)
+PrintLabel.Size = UDim2.new(0, 118, 0, 54)
+PrintLabel.Font = Enum.Font.SourceSans
+PrintLabel.Text = "Print"
+PrintLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+PrintLabel.TextScaled = true
+PrintLabel.TextSize = 50.000
+PrintLabel.TextWrapped = true
+
+UITextSizeConstraint_20.Parent = PrintLabel
+UITextSizeConstraint_20.MaxTextSize = 50
+
+UIListLayout.Parent = ScrollingFrame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+
+UIAspectRatioConstraint_11.Parent = MainFrame
+UIAspectRatioConstraint_11.AspectRatio = 0.927
+
+DescriptionFrame.Name = "DescriptionFrame"
+DescriptionFrame.Parent = MainFrame
+DescriptionFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DescriptionFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+DescriptionFrame.BorderSizePixel = 0
+DescriptionFrame.Position = UDim2.new(0, 0, 1.02564108, 0)
+DescriptionFrame.Size = UDim2.new(0.999281704, 0, 0.131054133, 0)
+
+UICorner_12.CornerRadius = UDim.new(0, 9)
+UICorner_12.Parent = DescriptionFrame
+
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(30, 30, 30))}
+UIGradient_12.Parent = DescriptionFrame
+
+Description.Name = "Description"
+Description.Parent = DescriptionFrame
+Description.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Description.BackgroundTransparency = 1.000
+Description.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Description.BorderSizePixel = 0
+Description.Position = UDim2.new(0, 0, 0.152173907, 0)
+Description.Size = UDim2.new(0, 323, 0, 32)
+Description.Font = Enum.Font.SourceSans
+Description.Text = "To use the commands the <> are textboxes"
+Description.TextColor3 = Color3.fromRGB(255, 255, 255)
+Description.TextScaled = true
+Description.TextSize = 22.000
+Description.TextWrapped = true
+
+UIAspectRatioConstraint_12.Parent = DescriptionFrame
+UIAspectRatioConstraint_12.AspectRatio = 7.065
+
+-- Scripts:
+
+local function XMBYC_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local button = script.Parent
+	local frame = button.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		frame.Visible = false
+	end)
+end
+coroutine.wrap(XMBYC_fake_script)()
+local function CMMQOZH_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	local textBox = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	local function setSpeed(speed)
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+	
+		humanoid.WalkSpeed = speed
+	end
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+		if not enterPressed then
+			return
+		end
+	
+		local speed = tonumber(textBox.Text)
+	
+		if speed then
+			setSpeed(speed)
+		end
+	
+		textBox.Text = ""
+	end)
+end
+coroutine.wrap(CMMQOZH_fake_script)()
+local function YHJT_fake_script() -- TextBox_2.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_2)
+
+	local textBox = script.Parent
+	local player = game.Players.LocalPlayer
+	
+	local function setJumpPower(power)
+		local character = player.Character or player.CharacterAdded:Wait()
+		local humanoid = character:WaitForChild("Humanoid")
+	
+		humanoid.UseJumpPower = true
+		humanoid.JumpPower = power
+	end
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+		if not enterPressed then
+			return
+		end
+	
+		local power = tonumber(textBox.Text)
+	
+		if power then
+			setJumpPower(power)
+		end
+	
+		textBox.Text = ""
+	end)
+end
+coroutine.wrap(YHJT_fake_script)()
+local function TADLVLG_fake_script() -- TextBox_3.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_3)
+
+	local textBox = script.Parent
+	local UIS = game:GetService("UserInputService")
+	local player = game.Players.LocalPlayer
+	
+	local infJump = false
+	
+	UIS.JumpRequest:Connect(function()
+		if infJump then
+			local character = player.Character
+			if character then
+				local humanoid = character:FindFirstChild("Humanoid")
+				if humanoid then
+					humanoid:ChangeState(Enum.HumanoidStateType.Jumping)
+				end
+			end
+		end
+	end)
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+		if not enterPressed then
+			return
+		end
+	
+		local text = textBox.Text:lower()
+	
+		if text == "true" then
+			infJump = true
+			print("Infinite Jump Enabled")
+		elseif text == "false" then
+			infJump = false
+			print("Infinite Jump Disabled")
+		end
+	
+		textBox.Text = ""
+	end)
+end
+coroutine.wrap(TADLVLG_fake_script)()
+local function PUGRJ_fake_script() -- TextBox_4.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_4)
+
+	local textBox = script.Parent
+	
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local player = Players.LocalPlayer
+	local camera = workspace.CurrentCamera
+	
+	local flying = false
+	local bodyVelocity
+	local bodyGyro
+	local connection
+	
+	local function startFlying()
+		if flying then return end
+		flying = true
+	
+		local character = player.Character or player.CharacterAdded:Wait()
+		local hrp = character:WaitForChild("HumanoidRootPart")
+		local humanoid = character:WaitForChild("Humanoid")
+	
+		humanoid.PlatformStand = false
+	
+		bodyVelocity = Instance.new("BodyVelocity")
+		bodyVelocity.MaxForce = Vector3.new(math.huge, math.huge, math.huge)
+		bodyVelocity.Velocity = Vector3.zero
+		bodyVelocity.Parent = hrp
+	
+		bodyGyro = Instance.new("BodyGyro")
+		bodyGyro.MaxTorque = Vector3.new(math.huge, math.huge, math.huge)
+		bodyGyro.P = 10000
+		bodyGyro.CFrame = camera.CFrame
+		bodyGyro.Parent = hrp
+	
+		connection = RunService.RenderStepped:Connect(function()
+			if not flying then return end
+	
+			bodyGyro.CFrame = camera.CFrame
+	
+			local moveDir = humanoid.MoveDirection
+			if moveDir.Magnitude > 0 then
+				bodyVelocity.Velocity = moveDir * 60 -- Fly speed
+			else
+				bodyVelocity.Velocity = Vector3.zero
+			end
+		end)
+	end
+	
+	local function stopFlying()
+		flying = false
+	
+		if connection then
+			connection:Disconnect()
+			connection = nil
+		end
+	
+		if bodyVelocity then
+			bodyVelocity:Destroy()
+			bodyVelocity = nil
+		end
+	
+		if bodyGyro then
+			bodyGyro:Destroy()
+			bodyGyro = nil
+		end
+	end
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+		if not enterPressed then
+			return
+		end
+	
+		local text = textBox.Text:lower()
+	
+		if text == "true" then
+			startFlying()
+		elseif text == "false" then
+			stopFlying()
+		end
+	
+		textBox.Text = ""
+	end)
+end
+coroutine.wrap(PUGRJ_fake_script)()
+local function FNLYKTX_fake_script() -- TextBox_5.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_5)
+
+	local textBox = script.Parent
+	
+	local Players = game:GetService("Players")
+	local textBox = script.Parent
+	local Players = game:GetService("Players")
+	
+	local localPlayer = Players.LocalPlayer
+	
+	local function teleportToPlayer(targetName)
+		targetName = targetName:lower()
+	
+		for _, player in ipairs(Players:GetPlayers()) do
+			if player.Name:lower():sub(1, #targetName) == targetName
+				or player.DisplayName:lower():sub(1, #targetName) == targetName then
+	
+				local myCharacter = localPlayer.Character or localPlayer.CharacterAdded:Wait()
+				local myHRP = myCharacter:WaitForChild("HumanoidRootPart")
+	
+				local targetCharacter = player.Character
+				if targetCharacter then
+					local targetHRP = targetCharacter:FindFirstChild("HumanoidRootPart")
+					if targetHRP then
+						myHRP.CFrame = targetHRP.CFrame + Vector3.new(0, 3, 0)
+					end
+				end
+	
+				break
+			end
+		end
+	end
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+		if not enterPressed then
+			return
+		end
+	
+		local target = textBox.Text
+	
+		if target ~= "" then
+			teleportToPlayer(target)
+		end
+	
+		textBox.Text = ""
+	end)
+end
+coroutine.wrap(FNLYKTX_fake_script)()
+local function RFCZMJX_fake_script() -- TextBox_6.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_6)
+
+	local textBox = script.Parent
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	local noclip = false
+	
+	local connection
+	
+	local function setNoclip(state)
+		noclip = state
+	
+		if connection then
+			connection:Disconnect()
+			connection = nil
+		end
+	
+		if noclip then
+			connection = RunService.Stepped:Connect(function()
+				local character = player.Character
+				if character then
+					for _, part in ipairs(character:GetDescendants()) do
+						if part:IsA("BasePart") then
+							part.CanCollide = false
+						end
+					end
+				end
+			end)
+		end
+	end
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+		if not enterPressed then
+			return
+		end
+	
+		local text = textBox.Text:lower()
+	
+		if text == "true" then
+			setNoclip(true)
+		elseif text == "false" then
+			setNoclip(false)
+		end
+	
+		textBox.Text = ""
+	end)
+end
+coroutine.wrap(RFCZMJX_fake_script)()
+local function LFNACIA_fake_script() -- TextBox_7.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_7)
+
+	local textBox = script.Parent
+	local RunService = game:GetService("RunService")
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	local spinSpeed = 0
+	local connection
+	
+	local function startSpin(speed)
+		spinSpeed = speed
+	
+		if connection then
+			connection:Disconnect()
+		end
+	
+		connection = RunService.RenderStepped:Connect(function()
+			local character = player.Character
+			if character then
+				local hrp = character:FindFirstChild("HumanoidRootPart")
+	
+				if hrp then
+					hrp.CFrame = hrp.CFrame * CFrame.Angles(0, math.rad(spinSpeed), 0)
+				end
+			end
+		end)
+	end
+	
+	local function stopSpin()
+		spinSpeed = 0
+	
+		if connection then
+			connection:Disconnect()
+			connection = nil
+		end
+	end
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+		if not enterPressed then
+			return
+		end
+	
+		local speed = tonumber(textBox.Text)
+	
+		if speed then
+			if speed == 0 then
+				stopSpin()
+			else
+				startSpin(speed)
+			end
+		end
+	
+		textBox.Text = ""
+	end)
+end
+coroutine.wrap(LFNACIA_fake_script)()
+local function WYOI_fake_script() -- TextBox_8.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_8)
+
+	local textBox = script.Parent
+	local Players = game:GetService("Players")
+	local RunService = game:GetService("RunService")
+	
+	local player = Players.LocalPlayer
+	
+	local floatForce
+	local connection
+	
+	local function startFloat(height)
+		local character = player.Character or player.CharacterAdded:Wait()
+		local hrp = character:WaitForChild("HumanoidRootPart")
+	
+		if floatForce then
+			floatForce:Destroy()
+		end
+	
+		floatForce = Instance.new("BodyPosition")
+		floatForce.MaxForce = Vector3.new(0, math.huge, 0)
+		floatForce.Position = hrp.Position + Vector3.new(0, height, 0)
+		floatForce.D = 500
+		floatForce.P = 3000
+		floatForce.Parent = hrp
+	
+		connection = RunService.Heartbeat:Connect(function()
+			if floatForce and hrp then
+				floatForce.Position = Vector3.new(
+					hrp.Position.X,
+					hrp.Position.Y + height,
+					hrp.Position.Z
+				)
+			end
+		end)
+	end
+	
+	local function stopFloat()
+		if floatForce then
+			floatForce:Destroy()
+			floatForce = nil
+		end
+	
+		if connection then
+			connection:Disconnect()
+			connection = nil
+		end
+	end
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+		if not enterPressed then return end
+	
+		local height = tonumber(textBox.Text)
+	
+		if height then
+			if height == 0 then
+				stopFloat()
+			else
+				startFloat(height)
+			end
+		end
+	
+		textBox.Text = ""
+	end)
+end
+coroutine.wrap(WYOI_fake_script)()
+local function NTROF_fake_script() -- TextBox_9.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_9)
+
+	local textBox = script.Parent
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	
+	local flingPower = 0
+	local flingConnection
+	
+	local function startFling(power)
+		flingPower = power
+	
+		local character = player.Character or player.CharacterAdded:Wait()
+		local hrp = character:WaitForChild("HumanoidRootPart")
+	
+		if flingConnection then
+			flingConnection:Disconnect()
+		end
+	
+		flingConnection = game:GetService("RunService").Heartbeat:Connect(function()
+			if hrp then
+				hrp.AssemblyLinearVelocity = Vector3.new(
+					math.random(-power, power),
+					power,
+					math.random(-power, power)
+				)
+			end
+		end)
+	end
+	
+	local function stopFling()
+		if flingConnection then
+			flingConnection:Disconnect()
+			flingConnection = nil
+		end
+	end
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+		if not enterPressed then return end
+	
+		local power = tonumber(textBox.Text)
+	
+		if power then
+			if power == 0 then
+				stopFling()
+			else
+				startFling(power)
+			end
+		end
+	
+		textBox.Text = ""
+	end)
+end
+coroutine.wrap(NTROF_fake_script)()
+local function SHVBSO_fake_script() -- TextBox_10.LocalScript 
+	local script = Instance.new('LocalScript', TextBox_10)
+
+	local textBox = script.Parent
+	
+	textBox.FocusLost:Connect(function(enterPressed)
+		if not enterPressed then
+			return
+		end
+	
+		if textBox.Text:lower() == "print" then
+			print("Kynexl was here")
+		end
+	
+		textBox.Text = ""
+	end)
+end
+coroutine.wrap(SHVBSO_fake_script)()
+local function UEMAOIZ_fake_script() -- Kryz.Open 
+	local script = Instance.new('LocalScript', Kryz)
+
+	local Players = game:GetService("Players")
+	
+	local player = Players.LocalPlayer
+	local gui = script.Parent
+	
+	gui.Enabled = false
+	
+	local function openGui(message)
+		if message:lower() == "!open" then
+			gui.Enabled = true
+		end
+	end
+	
+	player.Chatted:Connect(openGui)
+end
+coroutine.wrap(UEMAOIZ_fake_script)()
